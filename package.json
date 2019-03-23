@@ -1,0 +1,20 @@
+{
+  "name": "simbol-avatar",
+  "version": "1.0.0",
+  "description": "Simple API to retrieve GLTF/GLBs of Simbol avatars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Alberto Elias",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "gltf-pipeline": "^2.1.3",
+    "hex-rgb": "^4.0.0",
+    "mnemonist": "^0.27.2",
+    "srgb-logarithmic-and-linear-colour-conversion": "^1.0.2"
+  }
+}
