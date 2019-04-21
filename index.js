@@ -71,10 +71,11 @@ const SUPPORTED_COLORS = [
 	'1c3144',
 	'072030',
 	'f7f6f5',
-	'f9d656'
+	'f9d656',
+	'3588B5'
 ]
 
-const model = require('./AnonymousVP.json')
+const model = require('./avatar.json')
 
 app.use(function(req, res, next) {
 	for (const key in req.query) { 
@@ -115,7 +116,7 @@ app.get('/avatar.glb', (req, res) => {
 		res.send(model)
 	} else {
 		const gltfModel = generateModel(params)
-		gltf2glb(gltfModel)
+		// gltf2glb(gltfModel)
 		.then((model) => {
 			cache.set(paramsString, model)
 			console.log('fresh')
