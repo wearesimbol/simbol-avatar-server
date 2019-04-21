@@ -39,7 +39,7 @@ function normalizeParams(params) {
 
 function isValidColor(hexColor) {
 	hexColor = hexColor.replace('#', '')
-	return !!SUPPORTED_COLORS.includes(hexColor)
+	return !!SUPPORTED_COLORS.includes(hexColor.toLowerCase())
 }
 
 function generateModel(params) {
