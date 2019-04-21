@@ -116,7 +116,7 @@ app.get('/avatar.glb', (req, res) => {
 		res.send(model)
 	} else {
 		const gltfModel = generateModel(params)
-		// gltf2glb(gltfModel)
+		gltf2glb(gltfModel)
 		.then((model) => {
 			cache.set(paramsString, model)
 			console.log('fresh')
