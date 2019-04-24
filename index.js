@@ -68,11 +68,14 @@ function gltf2glb(gltfModel) {
 }
 
 const SUPPORTED_COLORS = [
-	'1c3144',
-	'072030',
-	'f7f6f5',
-	'f9d656',
-	'3588B5'
+	'#F7F6F5',
+	'#5399ba',
+	'#F9D656',
+	'#E2653F',
+	'#6FC47B',
+	'#9A865D',
+	'#545454',
+	'#0B1821'
 ]
 
 const model = require('./avatar.json')
