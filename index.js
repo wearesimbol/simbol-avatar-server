@@ -39,7 +39,7 @@ function normalizeParams(params) {
 
 function isValidColor(hexColor) {
 	hexColor = hexColor.replace('#', '')
-	return !!SUPPORTED_COLORS.includes(hexColor.toLowerCase())
+	return !!SUPPORTED_COLORS.includes(hexColor.toUpperCase())
 }
 
 function generateModel(params) {
@@ -68,14 +68,14 @@ function gltf2glb(gltfModel) {
 }
 
 const SUPPORTED_COLORS = [
-	'#F7F6F5',
-	'#5399ba',
-	'#F9D656',
-	'#E2653F',
-	'#6FC47B',
-	'#9A865D',
-	'#545454',
-	'#0B1821'
+	'F7F6F5',
+	'5399ba',
+	'F9D656',
+	'E2653F',
+	'6FC47B',
+	'9A865D',
+	'545454',
+	'0B1821'
 ]
 
 const model = require('./avatar.json')
